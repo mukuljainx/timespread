@@ -16,23 +16,23 @@ router.post('/login', passport.authenticate('local-login', {
    failureFlash : true // allow flash messages
 }));
 
-router.post('/rollno', function(req, res, next) {
-  console.log(req.body);
-
-  User.findOne({ 'rollNo' :  rollNo }, function(err, user) {
-      // if there are any errors, return the error
-      if (err){
-          return done(err);
-        }
-      // check to see if theres already a user with that email
-      if (user) {
-        res.end("{response : false}");
-      }
-    });
-
-    res.end("{response : true}");
-
-});
+// router.post('/rollno', function(req, res, next) {
+//   console.log(req.body);
+//
+//   User.findOne({ 'rollNo' :  rollNo }, function(err, user) {
+//       // if there are any errors, return the error
+//       if (err){
+//           return done(err);
+//         }
+//       // check to see if theres already a user with that email
+//       if (user) {
+//         res.end("{response : false}");
+//       }
+//     });
+//
+//     res.end("{response : true}");
+//
+// });
 
 
 module.exports = router;
