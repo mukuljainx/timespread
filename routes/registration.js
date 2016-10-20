@@ -17,10 +17,9 @@ router.post('/login', passport.authenticate('local-login', {
 }));
 
 router.post('/rollno', function(req, res, next) {
-  console.log(req.body);
-
-  User.findOne({ 'rollNo' :  rollNo }, function(err, user) {
+  User.findOne({ 'rollNo' :  req.body.rollNo }, function(err, user) {
       // if there are any errors, return the error
+      console.log(user)
       if (err){
           return done(err);
         }
@@ -28,10 +27,8 @@ router.post('/rollno', function(req, res, next) {
       if (user) {
         res.end("{response : false}");
       }
+      res.end("{response : true}");
     });
-
-    res.end("{response : true}");
-
 });
 
 
