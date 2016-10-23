@@ -1,4 +1,4 @@
 node_modules/
 *.DS_Store
 dummyDB/
-database\ str/
+database_str/
