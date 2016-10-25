@@ -37,13 +37,14 @@ router.post('/add', function(req, res, next) {
 router.get('/all',function(req,res,nex){
   MessMenu.find({}, function(err, menu) {
     // if there are any errors, return the error
-    if (err){
+    if (err)
         return done(err);
-      }
     // check to see if theres already a user with that email
-    if (menu) {
+    if (menu[0])
       res.json(menu[0].messMenu);
-    }
+    else if(menu)
+      res.json(menu);
+
     res.end("{response : false}");
 
   });

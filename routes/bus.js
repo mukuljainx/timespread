@@ -38,7 +38,6 @@ router.post('/add', function(req, res, next) {
 	schedule.save(function(err) {
     if (err)
         res.send(err);
-
     res.json({ message: 'value created!' });
   });
 
@@ -48,13 +47,14 @@ router.post('/add', function(req, res, next) {
 router.get('/all',function(req,res,nex){
   BusSchedule.find({}, function(err, scheduleAll) {
     // if there are any errors, return the error
-    if (err){
+    if (err)
         return done(err);
-      }
     // check to see if theres already a user with that email
-    if (scheduleAll) {
+    if (scheduleAll[0])
       res.json(scheduleAll[0].busSchedule);
-    }
+    else if(scheduleAll)
+      res.json(scheduleAll);
+      
     res.end("{response : false}");
 
   });
