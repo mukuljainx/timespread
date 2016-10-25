@@ -41,7 +41,6 @@ router.post('/add', function(req, res, next) {
     res.json({ message: 'value created!' });
   });
 
-  next();
 });
 
 router.get('/all',function(req,res,nex){
@@ -54,7 +53,7 @@ router.get('/all',function(req,res,nex){
       res.json(scheduleAll[0].busSchedule);
     else if(scheduleAll)
       res.json(scheduleAll);
-      
+
     res.end("{response : false}");
 
   });
