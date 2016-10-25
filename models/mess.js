@@ -2,8 +2,8 @@ var mongoose = require('mongoose');
 
 var messSchema = mongoose.Schema({
     messMenu : {
-      date : Date,
-      data : [
+      date : String,
+      menuData : [
         {
           day : Number,
           breakFast : {
@@ -14,11 +14,11 @@ var messSchema = mongoose.Schema({
             items : [],
             id : String,
           },
-          snacks : breakFast : {
+          snacks : {
             items : [],
             id : String,
           },
-          dinner : breakFast : {
+          dinner : {
             items : [],
             id : String,
           },
