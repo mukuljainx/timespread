@@ -6,8 +6,7 @@ var bodyParser = require('body-parser');
 
 // true
 router.get('/true', function(req, res, next) {
-  console.log(req);
-  res.end("{response : true}");
+  res.end("{response : true, user : " + req.user + "}");
 });
 
 // true
