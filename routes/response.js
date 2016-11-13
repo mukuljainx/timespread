@@ -6,6 +6,9 @@ var bodyParser = require('body-parser');
 
 // true
 router.get('/true', function(req, res, next) {
+  delete req.user.password;
+  delete req.user._id;
+  delete req.user.__v;
   res.end("{response : true, user : " + req.user + "}");
 });
 

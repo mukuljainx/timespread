@@ -12,6 +12,7 @@ var userSchema = mongoose.Schema({
     courses      : Array,
     clubs        : Array,
     food         : Array,
+    placement    : Array,
 });
 
 // methods ======================

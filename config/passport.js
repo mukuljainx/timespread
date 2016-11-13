@@ -62,10 +62,11 @@ module.exports = function(passport) {
                 // set the user's local credentials
                 newUser.rollNo    = rollNo;
                 newUser.password = newUser.generateHash(password);
-                newUser.fullName  = req.body.fullName;
-                newUser.mobile    = req.body.mobile;
-                newUser.email    = req.body.email;
-                newUser.mess    = req.body.mess;
+                newUser.fullName = req.body.fullName;
+                newUser.mobile = req.body.mobile;
+                newUser.email = req.body.email;
+                newUser.mess = req.body.mess;
+                newUser.placement = req.body.placement;
                 console.log(rollNo);
 
                 // save the user
