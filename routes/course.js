@@ -23,10 +23,10 @@ router.post('/add', function(req, res, next) {
     courseslist = req.body.courseData[i].courses;
     for(var j=0; j<courseslist.length; j++){
       course.courses.courseData[i].courses.push({
-        name : courseslist[j].courseName,
+        name : courseslist[j].name,
         professor : courseslist[j].professor,
         weekdays : courseslist[j].weekdays,
-        courseCode : courseslist[j].Code
+        code : courseslist[j].code
       })
     }
   }

@@ -1,46 +1,86 @@
 {
-	"placementData" : [
+  "courseData" : [
+    {
+      "semester" : 5,
+      "courses" : [
 
-		{
-			"companyName" : "Innovacer",
-			"pointerCriteria" : 7.00,
-			"pacementPackage" : 8,
-			"jobDescription" : "placement/JD/innovacer.pdf"
-		},
+        {
+        "name" : "Genetic Algorithms & Applications",
+        "professor" : "Vibhor K Shrotriya",
+        "weekdays" : [2,1,-1,4,-1],
+        "code" : "5GAA"
+        },
 
-		{
-			"companyName" : "Sapient Nitro",
-			"pointerCriteria" : 6.00,
-			"placementPackage" : 5.5,
-			"jobDescription" : "placement/JD/sapient_nitro.pdf"
-		},
+        {
+        "name" : "Theory Of Computation",
+        "professor" : "Sakthi Balan",
+        "weekdays" : [3,2,-1,-1,1],
+        "code" : "5TOC"
+        },
 
-		{
-			"companyName" : "Microsoft GTSC",
-			"pointerCriteria" : 8.50,
-			"placementPackage" : 7,
-			"jobDescription" : "placement/JD/microsoft_gtsc.pdf"
-		},
+        {
+        "name" : "Macro Economics for Managers",
+        "professor" : "Surinder Nehra",
+        "weekdays" : [5,4,1,-1,-1],
+        "code" : "5MEM"
+        },
 
-		{
-			"companyName" : "Samsung",
-			"pointerCriteria" : 7.00,
-			"placementPackage" : 10,
-			"jobDescription" : "placement/JD/samsung.pdf"
-		},
+        {
+        "name" : "Introduction to Nano Science & Engineering",
+        "professor" : "Somnath Biswas",
+        "weekdays" : [-1,-1,3,2,4],
+        "code" : "5INSE"
+        },
 
-		{
-			"companyName" : "Amazon",
-			"pointerCriteria" : 7.50,
-			"placementPackage" : 27,
-			"jobDescription" : "placement/JD/amazon.pdf"
-		},
+        {
+        "name" : "Operating Systems Batch-A",
+        "professor" : "Subrat & Sunil",
+        "weekdays" : [4,-1,2,-1,2],
+        "code" : "5OS"
+        },
 
-		{
-			"companyName" : "Directi",
-			"pointerCriteria" : 6.50,
-			"placementPackage" : 12,
-			"jobDescription" : "placement/JD/directi.pdf"
-		}
-	]
+        {
+        "name" : "Operating Systems Batch-B",
+        "professor" : "Subrat & Sunil",
+        "weekdays" : [-1,3,-1,1,3],
+        "code" : "5OS"
+        },
+
+        {
+        "name" : "Software Engineering Batch-A",
+        "professor" : "Narsi B",
+        "weekdays" : [-1,3,-1,1,3],
+        "code" : "5SWE"
+        },
+
+        {
+        "name" : "Software Engineering Batch-B",
+        "professor" : "Narsi B",
+        "weekdays" : [4,-1,2,-1,2],
+        "code" : "5SWE"
+        },
+
+        {
+        "name" : "Micro Processor & Interface",
+        "professor" : "Tom Cruise",
+        "weekdays" : [-1,-1,2,1,3],
+        "code" : "5MICRO"
+        },
+
+        {
+        "name" : "Digital Signal Processing",
+        "professor" : "Sylvester Stallone",
+        "weekdays" : [2,1,-1,4,-1],
+        "code" : "5DSP"
+        },
+
+        {
+        "name" : "Digital Communication",
+        "professor" : "Jennifer Aniston",
+        "weekdays" : [3,2,-1,-1,1],
+        "code" : "5DC"
+        }
+      ]
+    }
+  ]
 }
