@@ -8,10 +8,10 @@ var courseSchema = mongoose.Schema({
           semester : Number,
           courses : [
             {
-              courseName : String,
+              name : String,
               professor : String,
               weekdays : [],
-              courseCode : String
+              code : String
             }
           ]
         }
