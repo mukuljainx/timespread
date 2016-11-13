@@ -6,20 +6,7 @@ var bodyParser = require('body-parser');
 
 // true
 router.get('/true', function(req, res, next) {
-  response = {
-    response : true,
-    user : {
-      email : req.user.email,
-      mobile : req.user.mobile,
-      fullName : req.user.fullName,
-      rollNo : req.user.rollNo,
-      food : req.user.food,
-      clubs : req.user.clubs,
-      courses : req.user.courses
-    }
-  }
-
-  res.json(response);
+  res.end("{response : true, user : " + req.user + "}");
 });
 
 // true
@@ -29,3 +16,21 @@ router.get('/false', function(req, res, next) {
 
 
 module.exports = router;
+
+
+// router.get('/true', function(req, res, next) {
+//   response = {
+//     response : true,
+//     user : {
+//       email : req.user.email,
+//       mobile : req.user.mobile,
+//       fullName : req.user.fullName,
+//       rollNo : req.user.rollNo,
+//       food : req.user.food,
+//       clubs : req.user.clubs,
+//       courses : req.user.courses
+//     }
+//   }
+//
+//   res.e(response);
+// });
