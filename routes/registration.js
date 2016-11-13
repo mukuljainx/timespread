@@ -30,5 +30,25 @@ router.post('/rollno', function(req, res, next) {
     });
 });
 
+// router.post('/add_course', function(req, res, next) {
+//   User.findOne({'rollNo' :  req.body.rollNo }, function(err, user){
+//     if (err) return handleError(err);
+//     tank.size = 'large';
+//     tank.save(function (err, updatedTank) {
+//       if (err) return handleError(err);
+//       res.send(updatedTank);
+//       });
+//   });
+//
+//   User.findOneAndUpdate({'rollNo': req.body.rollNo}, {$set:{name:"Naomi"}}, {new: true}, function(err, doc){
+//     if(err){
+//         console.log("Something wrong when updating data!");
+//     }
+//
+//     console.log(doc);
+// });
+// });
+
+
 
 module.exports = router;

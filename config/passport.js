@@ -99,11 +99,11 @@ module.exports = function(passport) {
                 }
                 else if (user === null) // if no user is found, return the message
                 {
-                    return done(null, false, req.flash('Message', 'No user found')); // req.flash is the way to set flashdata using connect-flash
+                    return done(null, false, req.flash('Message', 'Invalid username/password')); // req.flash is the way to set flashdata using connect-flash
                 }
                 else if (!user.validPassword(password)) // if the user is found but the password is wrong
                 {
-                  return done(null, false, req.flash('Message', 'Oops! Wrong password.')); // create the loginMessage and save it to session as flashdata
+                  return done(null, false, req.flash('Message', 'Invalid username/password')); // create the loginMessage and save it to session as flashdata
                 }
                 else
                 {
