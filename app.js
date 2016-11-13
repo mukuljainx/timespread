@@ -28,6 +28,7 @@ var response = require('./routes/response');
 var bus = require('./routes/bus');
 var mess = require('./routes/mess');
 var course = require('./routes/course');
+var placement = require('./routes/placement');
 
 var app = express();
 
@@ -58,6 +59,7 @@ app.use('/user', userAcess);
 app.use('/bus', bus);
 app.use('/mess', mess);
 app.use('/course', course);
+app.use('/placement', placement);
 app.use('/response', response);
 
 // catch 404 and forward to error handler

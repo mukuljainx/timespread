@@ -1,0 +1,46 @@
+{
+	"placementData" : [
+
+		{
+			"companyName" : "Innovacer",
+			"pointerCriteria" : 7.00,
+			"pacementPackage" : "8,
+			"jobDescription" : "placement/JD/innovacer.pdf"
+		},
+
+		{
+			"companyName" : "Sapient Nitro",
+			"pointerCriteria" : 6.00,
+			"placementPackage" : 5.5,
+			"jobDescription" : "placement/JD/sapient_nitro.pdf"
+		},
+
+		{
+			"companyName" : "Microsoft GTSC",
+			"pointerCriteria" : 8.50,
+			"placementPackage" : 7,
+			"jobDescription" : "placement/JD/microsoft_gtsc.pdf"
+		},
+
+		{
+			"companyName" : "Samsung",
+			"pointerCriteria" : 7.00,
+			"placementPackage" : 10,
+			"jobDescription" : "placement/JD/samsung.pdf"
+		},
+
+		{
+			"companyName" : "Amazon",
+			"pointerCriteria" : 7.50,
+			"placementPackage" : 27,
+			"jobDescription" : "placement/JD/amazon.pdf"
+		},
+
+		{
+			"companyName" : "Directi",
+			"pointerCriteria" : 6.50,
+			"placementPackage" : 12,
+			"jobDescription" : "placement/JD/directi.pdf"
+		}
+	]
+}
