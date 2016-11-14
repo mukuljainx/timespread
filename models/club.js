@@ -14,4 +14,4 @@ var clubSchema = mongoose.Schema({
 });
 
 // create the model for mess and expose it to our app
-module.exports = mongoose.model('placement', placementSchema);
+module.exports = mongoose.model('club', clubSchema);

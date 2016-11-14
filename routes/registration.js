@@ -30,6 +30,21 @@ router.post('/rollno', function(req, res, next) {
     });
 });
 
+router.post('/userdata', function(req, res, next) {
+  User.findOne({ 'rollNo' :  req.body.rollNo }, function(err, user) {
+      // if there are any errors, return the error
+      if (err){
+          return done(err);
+        }
+      // check to see if theres already a user with that email
+      if (user) {
+        res.json(user);
+      }
+      res.end("{\"response\" : \"user not found\"}");
+    });
+});
+
+
 // Can be used for add and edit course both as in edit to an array will be pushed from front end
 router.post('/add_course', function(req, res, next) {
   User.findOneAndUpdate({'rollNo': req.body.rollNo}, {$set:{courses:req.body.courseData}}, {new: true}, function(err, user){

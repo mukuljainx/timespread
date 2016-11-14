@@ -29,6 +29,7 @@ var bus = require('./routes/bus');
 var mess = require('./routes/mess');
 var course = require('./routes/course');
 var placement = require('./routes/placement');
+var club = require('./routes/club');
 
 var app = express();
 
@@ -60,6 +61,7 @@ app.use('/bus', bus);
 app.use('/mess', mess);
 app.use('/course', course);
 app.use('/placement', placement);
+app.use('/club', club);
 app.use('/response', response);
 
 // catch 404 and forward to error handler
