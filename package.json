@@ -14,7 +14,7 @@
     "express": "~4.13.4",
     "express-session": "^1.14.1",
     "jade": "~1.11.0",
-    "mongoose": "^4.6.3",
+    "mongoose": "^5.7.5",
     "mongoose-currency": "^0.2.0",
     "morgan": "~1.7.0",
     "nodemon": "^1.11.0",
